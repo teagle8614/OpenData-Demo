@@ -64,7 +64,16 @@ header img{
   background-color: #fff;
   border: 5px double #6db3ff;
 }
-
+.tip2{
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.tip3{
+  color: red;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
 
 #parkTable{
@@ -81,18 +90,29 @@ header img{
 .dataTable tbody td{
   vertical-align: middle;
 }
+.cent{
+  text-align: center;
+}
 
 .dataTable tbody tr:hover td{
   background-color: #d1e7ff;
 }
 
-#charSession{
-  width: 80vw;
+
+.btn{
+  display: inline-block;
   margin: 0 auto;
-  margin-bottom: 120px;
+  color: #fff;
+  background-color: #2d92ff;
+  border: 1px solid #2d92ff;
+  padding: 8px 10px;
+  border-radius: 5px;
 }
-
-
+.btn:hover{
+  color :#2d92ff;
+  background-color: #fff;
+  border: 1px solid #2d92ff;
+}
 
 
 
@@ -144,11 +164,27 @@ footer p{
 
 
 /* --------------------------------- */
-/* table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before{
-  top: 50%;
-  transform: translateY(-50%);
+
+#chartSection{
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 120px;
 }
-table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after{
-  top: 50%;
-  transform: translateY(-50%);
-} */
+
+/* --------------------------------- */
+
+#detailSection{
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+#parkName{
+  color: #007bff;
+  margin-bottom: 15px;
+}
+#detailTable td{
+  border-bottom: 1px solid #dee2e6;
+}
+#detailTable td:first-child{
+  min-width: 120px;
+}

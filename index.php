@@ -32,21 +32,11 @@
 
 </head>
 <body>
-  <header class="navbar-dark bg-primary fixed-top shadow">
-    <nav class="navbar navbar-expand-md container">
-      <a class="navbar-brand" href="#"><img src="img/logo-white.svg" alt="">新北市停車場查詢</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="nav">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" id="nav_search" href="index.html">搜尋停車場</a>
-          <a class="nav-item nav-link" id="nav_chart" href="chart.html">圖表資料</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
+  <?php
+    $navPage=1;
+    include "include/header.php";
+  ?>
+  
   <section id="mapSession" class="container-fluid pb-2">
     <div id="svgBox" class="wow fadeInUp">
       <svg version="1.1" id="map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 5 500 510" enable-background="new 0 5 500 510" xml:space="preserve">
@@ -283,7 +273,6 @@
 
   <hr>
 
-
   <section id="searachSession" class=" wow fadeInUp">
     <div class="conditionBox mb-3">
       <div class="form-row">
@@ -296,20 +285,22 @@
       </div>  
     </div>
     <hr>
+
+    <p class="tip2">資料約三分鐘更新一次</p>
+    <p class="tip3">※剩餘汽車位若沒有顯示資料，則表示該停車場沒有提供即時空位的資訊</p>
     <div id="tableBox"></div>
+    
   </section>
-
-
 
   <div class="btnBackUP">
     <span class="material-icons">keyboard_arrow_up</span>
   </div>
 
-  <footer>
-    <p>資料來源:新北市政府資料開放平臺</p>
-    <p>© Copyright 2020. All Rights Reserved. Designed by 何思逸</p>
-  </footer>
 
+  <?php
+    include "include/footer.php";
+  ?>
+  
 
   <script src="js/jquery-3.5.1.min.js"></script>
   <!-- bootstrap -->
@@ -323,6 +314,7 @@
   <!-- chart.js  -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
   <script src="js/general.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
 </html>
