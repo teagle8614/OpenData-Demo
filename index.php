@@ -266,8 +266,10 @@
       </svg>
     </div>
     <div id="areaInfo"></div>
-    <div class="tip">
-      可點擊圖示上的區域快速查詢喔!
+    <div class="infoBox">
+      <div class="tip">
+        可點擊圖示上的區域快速查詢喔!
+      </div>
     </div>
   </section>
 
